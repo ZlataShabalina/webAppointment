@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="Assignment_8.js"></script>
+<title>Assignment 8</title>
+<style>
+body {background-color: powderblue;}
+h1 {color: blue;}
+p {color: red;}
+table, td {
+text-align: left;
+}
+</style>
+</head>
+<body>
+<h2>Welcome to the appointment website!</h2>
+<h3>Fill in the data of the appointment, please</h3>
+<form id="reg_form" action="javascript:displayData();">
+</form>
+<table>
+<tr><th>Appointment title:</th><td><input type="text" name="title" id="title" form="reg_form" placeholder="Enter the title"><span id="emptyTitle"></span></td></tr>
+<tr><th>Location:</th><td><input type="text" name="location" id="location" form="reg_form" placeholder="Enter the location"><span id="emptyLoc"></span></td></tr>
+<tr><th>Date:</th><td><input type="text" name="date" id="date" form="reg_form" placeholder="Enter the date"><span id="emptyDate"></span></td></tr>
+<tr><th>Participants' names:</th><td><textarea name="names" id="names" form="reg_form" placeholder="Enter the names"></textarea><span id="emptyNames"></span></td></tr>
+<tr><td></td><td> <table><tr><td><input type="submit" value="Register" form="reg_form" onclick="emptyField();"></td>
+<td><button onclick="clearData();">Clear Data</button></td></tr></table>
+</tr>
+</table>
+<h4>Here is the information of your appointment</h4>
+<table>
+<thead>
+<tr><th>Appointment title</th><th>Location</th><th>Date</th><th>Participants</th></tr>
+</thead>
+<tbody id="summary" id="empty">
+</tbody>
+</table>
+</body>
+</html>
+</body>
+</html>
